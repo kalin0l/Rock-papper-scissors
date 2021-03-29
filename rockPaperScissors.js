@@ -28,9 +28,29 @@ btns.forEach(btn => {
         }
         win(e);
         draw(e);
-        msg.textContent = `Player[${score[1]}] Computer[${score[0]}]`
+        msg.textContent = `Player - ${score[1]} : Computer - ${score[0]}`
+        endGame();
+
     })
 });
+function endGame() {
+    if (score[0] == 10) {
+        msg.textContent = '';
+        vs.textContent = '';
+        score[0] = 0;
+        score[1] = 0;
+        winner.textContent = 'Computer wins the game!';
+
+    }
+    if (score[1] == 10) {
+        msg.textContent = '';
+        vs.textContent = '';
+        score[0] = 0;
+        score[1] = 0;
+        winner.textContent = 'Player wins the game!';
+
+    }
+}
 
 // win scenarios
 function win(e) {
