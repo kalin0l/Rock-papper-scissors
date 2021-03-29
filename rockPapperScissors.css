@@ -4,26 +4,13 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
-  background-position: center center;
-  background-size: cover;
-  transition: 0.4s;
-})
-
 * {
     box-sizing: border-box;
 }
 
 body {
     display: flex;
+    font-family: 'Roboto', sans-serif;
     justify-content: center;
     align-items: center;
     height: 100vh;
