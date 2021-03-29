@@ -43,3 +43,16 @@ button {
     display: flex;
     justify-content: center;
 }
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-player,.score-computer {
+    margin: 0 5px;
+    padding: 10px;
+    background-color: yellowgreen;
+    opacity: 0.9;
+    border-radius: 6px;
+}
